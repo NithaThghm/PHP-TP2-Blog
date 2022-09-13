@@ -17,3 +17,6 @@ var_dump($auteur->findAll());
 
 $citations = new CitationRepository();
 var_dump($citations->findAll());
+
+$ac = new auteursRepository();
+var_dump($ac->getCitationByAuteur());

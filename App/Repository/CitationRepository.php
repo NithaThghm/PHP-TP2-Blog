@@ -25,4 +25,5 @@ class CitationRepository extends Database {
         return $citations;
     }
 
+
 }
