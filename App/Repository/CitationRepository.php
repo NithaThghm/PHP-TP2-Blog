@@ -5,7 +5,7 @@ use App\Service\Database;
 use PDO;
 use PDOException;
 
-class CitationRepository extends Database {
+class CitationRepository extends Database  {
     public function findAll() {
         $stmt = $this->db->prepare("SELECT * FROM citations");
         $stmt->execute();
