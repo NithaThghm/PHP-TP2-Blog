@@ -27,7 +27,7 @@ class Auteurs {
     {
         return $this->prenom;
     }
-    
+
     public function setPrenom(?string $prenom): void
     {
         $this->prenom = $prenom;

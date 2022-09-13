@@ -17,4 +17,4 @@
 </nav>
 
 
-//include $_SERVER['DOCUMENT_ROOT'] . '/loader.php';
+<!--include $_SERVER['DOCUMENT_ROOT'] . '/loader.php';-->

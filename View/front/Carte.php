@@ -1,15 +1,24 @@
+<?php
+foreach($ac as $carte){
+?>
+
 <div class="col-3">
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">
-                <?= $auteur->name ?>
+                <?= $carte['citation'] ?>
             </h5>
             <p class="card-text">
-                Citation de l'auteur : <?= $auteur->getCitationByAuteur(); ?>
+                <?= $carte['prenom'].' '.$carte['nom'] ?>
             </p>
         </div>
     </div>
 </div>
+
+<?php
+}
+?>
+
 
 
 

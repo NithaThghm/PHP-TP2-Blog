@@ -14,10 +14,10 @@ use App\Service\Database;
 
 
 $auteur = new auteursRepository();
-var_dump($auteur->findAll());
+//var_dump($auteur->findAll());
 
 $citations = new CitationRepository();
-var_dump($citations->findAll());
+//var_dump($citations->findAll());
 
 
 
@@ -25,3 +25,6 @@ require_once 'View/front/partial/footer.php';
 
 $ac = new auteursRepository();
 var_dump($ac->getCitationByAuteur());
+
+
+var_dump($_GET);
