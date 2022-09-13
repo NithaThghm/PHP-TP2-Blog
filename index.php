@@ -22,3 +22,6 @@ var_dump($citations->findAll());
 
 
 require_once 'View/front/partial/footer.php';
+
+$ac = new auteursRepository();
+var_dump($ac->getCitationByAuteur());
