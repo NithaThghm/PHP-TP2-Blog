@@ -1,5 +1,7 @@
 <?php
-foreach($ac as $carte){
+
+foreach($variables['Info'] as $carte){
+
 ?>
 
 <div class="col-3">

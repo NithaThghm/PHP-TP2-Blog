@@ -7,7 +7,7 @@ use App\Service\Database;
 use PDO;
 use PDOException;
 
-class auteursRepository extends Database
+class AuteursRepository extends Database
 {
 //    public function addAuteur(){
 //

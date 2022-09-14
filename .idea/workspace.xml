@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7703d0-1cac-4c83-afc5-80bd1e3fd94c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controller/Front/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Service/Route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Service/Router.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Service/View.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/front/base.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Entity/Auteurs.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Entity/Auteurs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Repository/AuteursRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Repository/AuteursRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Service/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Service/Database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/front/Carte.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/front/Carte.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/front/partial/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/front/partial/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663072049006</updated>
       <workItem from="1663072050202" duration="2480000" />
+      <workItem from="1663137094782" duration="8806000" />
     </task>
     <servers />
   </component>
