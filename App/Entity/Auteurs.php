@@ -1,16 +1,21 @@
 <?php
 
 
-class Auteurs {
+class Auteurs
+{
 
     private int $id;
     private ?string $nom;
     private ?string $prenom;
 
-
     public function getId(): int
     {
         return $this->id;
+    }
+
+    public function setId(int $id): void
+    {
+        $this->id = $id;
     }
 
     public function getNom(): ?string
@@ -32,5 +37,6 @@ class Auteurs {
     {
         $this->prenom = $prenom;
     }
+
 
 }

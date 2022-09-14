@@ -1,25 +1,15 @@
-<?php
-
-foreach($variables['Info'] as $carte){
-
-?>
-
 <div class="col-3">
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">
-                <?= $carte['citation'] ?>
+                <?= $citation->getCitation() ?>
             </h5>
             <p class="card-text">
-                <?= $carte['prenom'].' '.$carte['nom'] ?>
+                <?= $citation->getAuteur()->getPrenom() .' '.$citation->getAuteur()->getNom() ?>
             </p>
         </div>
     </div>
 </div>
-
-<?php
-}
-?>
 
 
 

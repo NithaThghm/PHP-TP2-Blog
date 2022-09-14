@@ -3,10 +3,10 @@
 namespace App\Controller\Front;
 
 require_once 'App/Service/View.php';
-//require_once 'App/Repository/AuteursRepository.php';
+require_once 'App/Form/FormCitation.php';
 
-use App\Repository\AuteursRepository;
-//use App\Repository\CitationRepository;
+use App\Form\FormCitation;
+use App\Repository\CitationRepository;
 use App\Service\View;
 
 
@@ -14,11 +14,11 @@ class HomeController
 {
     use View;
 
-    private AuteursRepository $AuteursRepository;
+    private CitationRepository $citationRepository;
 
     public function __construct()
     {
-        $this->AuteursRepository = new AuteursRepository();
+        $this->citationRepository = new CitationRepository();
         //$this->CitationRepository = new CitationRepository();
     }
 
@@ -26,10 +26,16 @@ class HomeController
     {
         return $this->render(
             SITE_NAME . ' - HomePage',
-            'front/Carte.php',
+            'front/home.php',
             [
-//                'formUser' => FormUser::buildLoginUserForm(),
-                'Info' => $this->AuteursRepository->getCitationByAuteur()
+                'citations' => $this->citationRepository->getCitationByAuteur(),
+                'formCitation' => FormCitation::buildAddCitation()
             ]);
     }
+
+    public function add()
+    {
+
+    }
+
 }

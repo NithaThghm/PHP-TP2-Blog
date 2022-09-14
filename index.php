@@ -34,6 +34,10 @@ $router->get('/', function () {
     echo (new HomeController())->invoke();
 });
 
+$router->get('/add', function () {
+    (new HomeController())->add();
+});
+
 $router->run();
 
 
