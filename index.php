@@ -1,32 +1,25 @@
 <?php
 
-//require_once 'View/front/partial/header.php';
-require_once 'App/Service/Database.php';
-require_once 'App/Repository/AuteursRepository.php';
-require_once 'App/Repository/CitationRepository.php';
-//require_once 'View/front/Carte.php';
-require_once 'App/Controller/Front/HomeController.php';
-require_once 'App/Service/Router.php';
+require_once 'Autoloader.php';
 
 use App\Repository\CitationRepository;
 use App\Repository\AuteursRepository;
 use App\Service\Database;
 use App\Controller\Front\HomeController;
-//require_once 'config/config.php';
+use App\Autoloader;
+
+Autoloader::$folderList =
+    [
+        "App/Entity/",
+        "App/Controller/Front/",
+        "App/Repository/",
+        "App/Exception/",
+        "App/Service/",
+        "App/Form/",
+    ];
+Autoloader::register();
 
 
-
-//$auteur = new AuteursRepository();
-//var_dump($auteur->findAll());
-
-//$citations = new CitationRepository();
-//var_dump($citations->findAll());
-
-
-
-//$ac = new AuteursRepository();
-
-//var_dump($ac->getCitationByAuteur());
 
 $router = new Router($_GET['url']);
 
@@ -36,7 +29,3 @@ $router->get('/', function () {
 
 $router->run();
 
-
-
-
-//require_once 'View/front/partial/footer.php';
